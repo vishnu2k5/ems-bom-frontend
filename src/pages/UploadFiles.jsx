@@ -72,7 +72,7 @@ const UploadFiles = () => {
             <button className="cancel-btn">Cancel</button>
           )}
             {selectedFiles.length > 0 && (
-              <Link to="/process">
+              <Link to="/config">
                 <button className="upload-btn">
                   Upload files
                 </button>

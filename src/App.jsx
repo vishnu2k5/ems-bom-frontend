@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import UploadFiles from './pages/UploadFiles';
-// import ConfigPage from './pages/ConfigPage';
+import ConfigPage from './pages/CongfigPage';
 // import ProcessPage from './pages/ProcessPage';
 // import ResultPage from './pages/ResultPage';
 // import MissingPage from './pages/MissingPage';
@@ -20,9 +20,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/upload" element={<UploadFiles />} />
-        {/*<Route path="/review" element={<ReviewFiles />} />
         <Route path="/config" element={<ConfigPage />} />
-        <Route path="/process" element={<ProcessPage />} />
+        {/*<Route path="/process" element={<ProcessPage />} />
         <Route path="/result" element={<ResultPage />} />
         <Route path="/missing" element={<MissingPage />} /> */}
       </Routes>
