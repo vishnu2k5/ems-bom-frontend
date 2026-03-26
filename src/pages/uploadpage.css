@@ -1,0 +1,199 @@
+/* ===== Container ===== */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 20px;
+}
+
+/* ===== Card ===== */
+.upload-card {
+  width: 750px;
+  max-width: 90%;
+  align-items: center;
+  
+  /* 🔥 CHANGE THIS */
+  background: rgba(255, 255, 255, 0.92);  /* more opaque */
+
+  backdrop-filter: blur(8px); /* optional glass effect */
+  
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Title ===== */
+.upload-card h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+/* ===== Subtitle ===== */
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* ===== Drop Zone ===== */
+.drop-zone {
+  border: 2px dashed #d1d5db;
+  border-radius: 14px;
+  padding: 50px;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 25px;
+  transition: all 0.2s ease;
+  background: rgba(109, 109, 109, 0.95);
+}
+
+.drop-zone:hover {
+  border-color: #9ca3af;
+  background: #fafafa;
+}
+
+/* ===== Drop Text ===== */
+.drop-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+/* ===== Supported Formats ===== */
+.formats {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+/* ===== Hidden Input ===== */
+.drop-zone input {
+  display: none;
+}
+
+/* ===== Select Button ===== */
+.select-btn {
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.select-btn:hover {
+  background: #f3f4f6;
+}
+
+/* ===== File List ===== */
+.file-list {
+  margin-top: 10px;
+}
+
+/* ===== File Item ===== */
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.file-item:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* ===== File Name ===== */
+.file-name {
+  font-weight: 500;
+  font-size: 15px;
+  color: #111;
+}
+
+/* ===== File Size ===== */
+.file-size {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #f3f4f6;
+  color: #111;
+}
+
+/* ===== Actions ===== */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* ===== Cancel Button ===== */
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #d1d5db;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: #f3f4f6;
+}
+
+/* ===== Upload Button ===== */
+.upload-btn {
+  background: #111;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.upload-btn:hover {
+  background: #333;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .upload-card {
+    padding: 25px;
+  }
+
+  .drop-zone {
+    padding: 30px;
+  }
+
+  .upload-card h2 {
+    font-size: 22px;
+  }
+}

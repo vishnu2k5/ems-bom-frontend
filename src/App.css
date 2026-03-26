@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f3ff 0%, #ece7f5 50%, #e8f0ff 100%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/logo.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* App Header */
+.app-header {
+  background: linear-gradient(90deg, #5B4B8A 0%, #6B5B95 50%, #5A7FB5 100%);
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.app-logo {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.app-logo:hover {
+  transform: scale(1.05);
+}
+
+.app-title {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
+}
