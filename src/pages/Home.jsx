@@ -11,8 +11,8 @@ export default function Home() {
         <p className="lead">Upload BOM files, validate components, and generate automated assembly quotations.</p>
 
         <div className="cta-row">
-          <Link to="/upload" className="cta-button">Upload BOMs</Link>
-          <Link to="/review" className="cta-ghost">Review Uploaded Files</Link>
+          <Link to="/config" className="cta-button">Start Process you files</Link>
+          {/* <Link to="/review" className="cta-ghost">Review Uploaded Files</Link> */}
         </div>
       </div>
 

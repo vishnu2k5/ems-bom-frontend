@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
-import UploadFiles from './pages/UploadFiles';
+import ReviewConfig from './pages/Reviewconfig';
 import ConfigPage from './pages/CongfigPage';
 // import ProcessPage from './pages/ProcessPage';
 // import ResultPage from './pages/ResultPage';
@@ -19,7 +19,7 @@ export default function App() {
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/upload" element={<UploadFiles />} />
+        <Route path="/review" element={<ReviewConfig />} />
         <Route path="/config" element={<ConfigPage />} />
         {/*<Route path="/process" element={<ProcessPage />} />
         <Route path="/result" element={<ResultPage />} />
