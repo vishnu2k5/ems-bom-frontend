@@ -1,27 +1,33 @@
 /* ─────────────────────────────────────────────────────────────────
    reviewconfig.css  |  HLTRONICS — Review Configuration
-   Same token palette as configpage.css
+   Theme: logo-accurate — teal primary · orange CTA · amber highlight
 ───────────────────────────────────────────────────────────────── */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --purple-700: #3d0099;
-  --purple-600: #5200cc;
-  --purple-500: #6600ff;
-  --purple-400: #7c33ff;
-  --purple-100: #ede8ff;
-  --purple-50:  #f5f2ff;
+  /* Teal scale */
+  --purple-700: #004F6B;
+  --purple-600: #00678A;   /* logo teal */
+  --purple-500: #0089B8;
+  --purple-400: #00A8DC;
+  --purple-100: #D6F0F8;
+  --purple-50:  #EFF9FD;
 
-  --border:     #e4e0f0;
-  --text-1:     #1a1a2e;
-  --text-2:     #555370;
-  --text-3:     #9896b0;
+  /* Orange accent */
+  --accent:        #E46001;
+  --accent-hover:  #C75400;
+  --accent-shadow: rgba(228,96,1,.35);
+
+  --border:     #D6EEF5;
+  --text-1:     #1F1A17;
+  --text-2:     #4A5568;
+  --text-3:     #94A3B8;
   --white:      #ffffff;
 
-  --radius:     10px;
-  --card-radius:16px;
-  --shadow-card:0 4px 32px rgba(60,0,160,.10), 0 1px 4px rgba(60,0,160,.06);
+  --radius:      10px;
+  --card-radius: 16px;
+  --shadow-card: 0 4px 32px rgba(0,103,138,.10), 0 1px 4px rgba(0,103,138,.06);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -77,12 +83,13 @@ body {
   padding: 36px 52px 28px;
   border-bottom: 1px solid var(--border);
   position: relative;
+  background: linear-gradient(135deg, #EFF9FD 0%, #FFF8EC 100%);
 }
 
 .rv-back-link {
   background: none;
   border: none;
-  color: var(--purple-500);
+  color: var(--purple-600);
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
@@ -280,10 +287,11 @@ body {
   color: var(--purple-600);
 }
 
+/* Submit — orange accent */
 .rv-btn-submit {
   flex: 1;
   height: 52px;
-  background: var(--purple-700);
+  background: var(--accent);
   color: #fff;
   font-family: inherit;
   font-size: 1rem;
@@ -296,13 +304,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  box-shadow: 0 4px 18px rgba(61,0,153,.35);
+  box-shadow: 0 4px 18px var(--accent-shadow);
   transition: background 150ms, transform 150ms, box-shadow 150ms;
 }
 
 .rv-btn-submit:hover:not(:disabled) {
-  background: var(--purple-600);
-  box-shadow: 0 6px 24px rgba(61,0,153,.45);
+  background: var(--accent-hover);
+  box-shadow: 0 6px 24px rgba(228,96,1,.45);
   transform: translateY(-1px);
 }
 

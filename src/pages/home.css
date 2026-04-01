@@ -1,15 +1,20 @@
+/* ─────────────────────────────────────────────────────────────────
+   home.css  |  HLTRONICS — Landing / Home
+   Theme: logo-accurate — teal primary · orange CTA · amber glow
+───────────────────────────────────────────────────────────────── */
+
 .container {
   max-width: 900px;
   margin: 20px auto;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.05),
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 8px 32px rgba(0, 103, 138, 0.07),
     inset 0 2px 4px rgba(255, 255, 255, 0.6),
-    0 0 100px rgba(106, 126, 234, 0.08);
+    0 0 100px rgba(0, 103, 138, 0.06);
   padding: 48px;
   position: relative;
   z-index: 5;
@@ -31,29 +36,29 @@
 .home-hero {
   text-align: center;
   padding: 56px 32px 36px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.05),
+  border: 1px solid rgba(0, 168, 220, 0.15);
+  box-shadow:
+    0 8px 32px rgba(0, 103, 138, 0.07),
     inset 0 2px 4px rgba(255, 255, 255, 0.6),
-    0 0 100px rgba(106, 126, 234, 0.08);
+    0 0 100px rgba(0, 103, 138, 0.06);
   margin-bottom: 28px;
 }
 
 .home-hero h1 {
   font-size: 2.8rem;
   margin-bottom: 12px;
-  color: #1a1a2e;
+  color: #00678A;   /* logo teal */
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 .lead {
-  color: #4a4a6a;
+  color: #2D4A54;
   margin-bottom: 32px;
   font-size: 1.15rem;
   font-weight: 500;
@@ -70,13 +75,14 @@
   flex-wrap: wrap;
 }
 
+/* Ghost button — teal outline */
 .cta-ghost {
   display: inline-block;
   padding: 16px 32px;
-  color: #001a4d;
+  color: #004F6B;
   text-decoration: none;
-  background: rgba(0, 51, 204, 0.08);
-  border: 2px solid rgba(0, 51, 204, 0.2);
+  background: rgba(0, 103, 138, 0.07);
+  border: 2px solid rgba(0, 103, 138, 0.22);
   border-radius: 50px;
   font-weight: 700;
   font-size: 1rem;
@@ -86,24 +92,29 @@
 }
 
 .cta-ghost:hover {
-  background: rgba(0, 51, 204, 0.12);
-  border-color: rgba(0, 51, 204, 0.4);
-  color: #0033cc;
+  background: rgba(0, 103, 138, 0.13);
+  border-color: rgba(0, 103, 138, 0.45);
+  color: #00678A;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 51, 204, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 103, 138, 0.12);
 }
-/* Features Slider Section */
+
+/* ── Features Slider ──────────────────────────────────────────── */
 .features-slider {
   margin-top: 40px;
   padding: 48px 24px;
-  background: linear-gradient(135deg, rgba(106, 126, 234, 0.08) 0%, rgba(107, 91, 149, 0.06) 100%);
+  background: linear-gradient(135deg,
+    rgba(0, 103, 138, 0.07) 0%,
+    rgba(228, 96, 1, 0.05) 50%,
+    rgba(255, 199, 31, 0.06) 100%
+  );
   border-radius: 20px;
-  border: 1px solid rgba(106, 126, 234, 0.12);
+  border: 1px solid rgba(0, 168, 220, 0.14);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   overflow: hidden;
-  box-shadow: 
-    0 8px 32px rgba(106, 126, 234, 0.08),
+  box-shadow:
+    0 8px 32px rgba(0, 103, 138, 0.06),
     inset 0 1px 2px rgba(255, 255, 255, 0.5);
 }
 
@@ -114,12 +125,8 @@
 }
 
 @keyframes slideLoop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .slider-item {
@@ -129,18 +136,18 @@
   flex-shrink: 0;
   width: max-content;
   padding: 16px 28px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.65);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .slider-item:hover {
-  background: rgba(255, 255, 255, 0.75);
-  border-color: rgba(106, 126, 234, 0.3);
-  box-shadow: 0 8px 24px rgba(106, 126, 234, 0.12);
+  background: rgba(255, 255, 255, 0.80);
+  border-color: rgba(0, 168, 220, 0.30);
+  box-shadow: 0 8px 24px rgba(0, 103, 138, 0.10);
   transform: translateY(-4px);
 }
 
@@ -152,46 +159,38 @@
   animation: iconFloat 2s ease-in-out infinite;
 }
 
-.slider-item:nth-child(2) .slider-icon {
-  animation-delay: 0.5s;
-}
-
-.slider-item:nth-child(3) .slider-icon {
-  animation-delay: 1s;
-}
-
-.slider-item:nth-child(4) .slider-icon {
-  animation-delay: 1.5s;
-}
+.slider-item:nth-child(2) .slider-icon { animation-delay: 0.5s; }
+.slider-item:nth-child(3) .slider-icon { animation-delay: 1s; }
+.slider-item:nth-child(4) .slider-icon { animation-delay: 1.5s; }
 
 @keyframes iconFloat {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
 }
 
 .slider-item p {
-  color: #2b2b2b;
+  color: #1F1A17;
   font-size: 0.95rem;
   font-weight: 600;
   margin: 0;
   line-height: 1.5;
   letter-spacing: 0.3px;
 }
+
+/* ── Primary CTA — orange from logo ──────────────────────────── */
 .cta-button {
   display: inline-block;
   padding: 18px 50px;
-  background: linear-gradient(135deg, #001a4d 0%, #0033cc 100%);
+  background: linear-gradient(135deg, #C75400 0%, #E46001 100%);
   color: white;
   text-decoration: none;
   border-radius: 50px;
   font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.3s ease;
-  box-shadow: 0 20px 60px rgba(0, 26, 77, 0.15), 0 0 40px rgba(0, 51, 204, 0);
+  box-shadow:
+    0 20px 60px rgba(228, 96, 1, 0.18),
+    0 0 40px rgba(228, 96, 1, 0);
   cursor: pointer;
   border: none;
   position: relative;
@@ -200,8 +199,11 @@
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 60px rgba(0, 26, 77, 0.25), 0 0 40px rgba(0, 51, 204, 0.4);
+  box-shadow:
+    0 20px 60px rgba(228, 96, 1, 0.30),
+    0 0 40px rgba(228, 96, 1, 0.35);
 }
-.submit-btn:active {
+
+.cta-button:active {
   transform: translateY(-1px);
 }
