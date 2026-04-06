@@ -142,7 +142,7 @@ const ConfigPage = () => {
             id="joborder"
             min={1}
             value={boardQty}
-            onChange={(e) => setBoardQty(Math.max(1, Number(e.target.value)))}
+            onChange={(e) => setBoardQty(e.target.value)}
           />
         </div>
 
