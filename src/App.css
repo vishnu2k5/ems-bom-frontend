@@ -33,7 +33,7 @@ body::before {
 
 /* App Header */
 .app-header {
-  background: linear-gradient(90deg, #5B4B8A 0%, #6B5B95 50%, #5A7FB5 100%);
+  background: linear-gradient(90deg, #5B4B8A 0%, #e46001d4 50%, #5A7FB5 100%);
   padding: 16px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
