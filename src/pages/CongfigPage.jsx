@@ -47,23 +47,19 @@ const ConfigPage = () => {
       setError("Please enter both SMD and PTH prices for Job Work.");
       return;
     }
-    if(jobWork&&componentQuote){ 
-      if(bomFiles.length===0||componentBomFiles.length===0){
-        setError("Please upload the required BOM files for Job Work and Component Quote.");
-        return;
-      }
+    if (jobWork && bomFiles.length === 0) {
+      setError("Please upload the required Customer BOM file for Job Work.");
+      return;
     }
-    if(componentQuote){
-      if(componentBomFiles.length===0){
-        setError("Please upload the required BOM file for Component Quote.");
-        return;
-      }
-      if(!traceableComponents && !selectedTraceable){
-        setError("Please select a preferred source for traceable components.");
-        return;
-      }
+    if (componentQuote && componentBomFiles.length === 0) {
+      setError("Please upload the required BOM file for Component Quote.");
+      return;
     }
-    if(pcbFabrication && gerberFiles.length === 0&&enquiryFiles.length===0){
+    if (componentQuote && traceableComponents && !selectedTraceable) {
+      setError("Please select a preferred source for traceable components.");
+      return;
+    }
+    if (pcbFabrication && (gerberFiles.length === 0 || enquiryFiles.length === 0)) {
       setError("Please upload the required Gerber and Enquiry files for PCB Fabrication.");
       return;
     }
